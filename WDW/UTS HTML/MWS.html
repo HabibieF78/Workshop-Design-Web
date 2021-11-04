@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="UTS.css">
+    <link rel="stylesheet" href="../css/Tailwind.css">
+    <title>Monumen Kapal selam</title>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <a href="index.html" class="logo">Suroboyo Rek!</a>
+    </header>
+    <!-- Banner -->
+    <section class="MWS-Home">
+        <p>Museum<br>WR Soepratman</p>
+    </section>
+    <!-- History -->
+    <section class="text-justify History px-10 text-l py-10">
+        <p class="text-center font-extrabold text-4xl pb-12">-- History --</p>
+        <p class="pb-4">Bangunan museum merupakan rumah milik kakak pertama WR. Soepratman, yang bernama Roekiyem Soepratijah. WR. Soepratman tinggal di rumah tersebut pada tahun 1937, hingga akhirnya meninggal dunia pada 17 Agustus 1938. Jl. Mangga No.21, Gedang Sewu, Surabaya Kel. Tambaksari / Kec. Tambaksari.</p>
+        <p class="pb-4">Bangunan museum merupakan rumah milik kakak pertama WR. Soepratman, yang bernama Roekiyem Soepratijah. WR. Soepratman tinggal di rumah tersebut pada tahun 1937, hingga akhirnya meninggal dunia pada 17 Agustus 1938. Dalam rumah ini hanya terdapat dua kamar tidur di sisi kanan dan ruang tamu di sisi kiri. Ruang tamu terpampang foto-foto WR. Supratman dengan keluarga dan teman dekat. Di pojok ruang tamu terdapat lemari berisi replika Biola. WR. Soepratman tinggal di kamar depan. Kamar ini unik tidak ada akses masuk dari kamar ini, selain dari jendela depan ini untuk mengelabui aparat Hindia Belanda.</p>
+    </section>
+    <!-- Content -->
+    <section class="Content px-10 text-xl py-10">
+        <p class="text-center font-extrabold text-4xl pb-12">-- Tour --</p>
+        <!-- 1 -->
+        <div class="grid grid-cols-7 text-justify pb-10">
+            <div class="col-span-3">
+                <img src="https://media.suara.com/pictures/970x544/2020/02/20/64046-museum-wr-supratman.jpg">
+                <p class="font-thin text-left text-sm">Patung WR Soepratman di depan pintu masuk</p>
+            </div>
+            <div class="col-span-1"></div>
+            <div class="col-span-3 pb-10">
+                <p class="text-2xl font-extrabold mb-3">Patung WR Soepratman</p>
+                <p class="mb-3">Sebelum memasuki museum, pengunjung langsung disambut oleh patung replika WR Soepratman yang sedang memainkan biolanya.</p>
+            </div>
+        </div>
+        <!-- 2 -->
+        <div class="grid grid-cols-7 pb-10 text-justify">
+            <div class="col-span-3 pb-10">
+                <p class="text-2xl font-extrabold mb-3">Duplikat biola WR Soepratman</p>
+                <p class="mb-3">Disini dipajang replika duplikat biola yang dulu dimiliki oleh WR Soepratman yang pernah digunakan untuk melantunkan lagu Indonesia Raya untuk pertama kalinya pada Kongres Pemuda Kedua di Gedung Kramat 106, Jakarta, tanggal 28 Oktober 1928.</p>
+            </div>
+            <div class="col-span-1"></div>
+            <div class="col-span-3">
+                <img src="https://media.suara.com/pictures/970x544/2020/02/20/37595-museum-wr-supratman.jpg">
+                <p class="font-thin text-left text-sm">Duplikat biola WR Soepratman</p>
+            </div>
+        </div>
+        <!-- 3 -->
+        <div class="grid grid-cols-7 text-justify pb-10">
+            <div class="col-span-3">
+                <img src="https://media.suara.com/pictures/970x544/2020/02/20/25577-museum-wr-supratman.jpg">
+                <p class="font-thin text-left text-sm">Berbagai koleksi foto dan penjelasan sejarahnya</p>
+            </div>
+            <div class="col-span-1"></div>
+            <div class="col-span-3 pb-10">
+                <p class="text-2xl font-extrabold mb-3">Koleksi foto bersejarah tentang WR Soepratman</p>
+                <p class="mb-3">Di museum ini, ditunjukkan berbagai foto bersejarah juga penjelasan tentang kisah hidup WR Soepratman dan kondisi Indonesia menjelang kemerdekaan..</p>
+            </div>
+        </div>
+    </section>
+    <button onclick="topFunction()" class="rounded-full" id="myBtn" title="Go to top">Top</button>
+    <script type="text/javascript">
+        //Sticky Navbar JS
+        window.addEventListener("scroll", function(){
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY >0);
+        })
+        var mybutton = document.getElementById("myBtn");
+        window.onscroll = function() {scrollFunction()};
+        //To Top Button JS
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</body>
+</html>

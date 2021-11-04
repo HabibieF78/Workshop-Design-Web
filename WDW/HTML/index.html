@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habibie | Home</title>
+    <link rel="stylesheet" href="../css/Tailwind.css">
+    <link rel="stylesheet" href="Home.css">
+</head>
+<body>
+    <header>
+        <a href="#Home" class="logo">Habibie~&lt3</a>
+        <ul>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Stuff">Stuff</a></li>
+        </ul>
+    </header>
+    <div class="Home" id="Home">
+        <div class="grid grid-cols-7">
+            <div class="pt-32 pl-10 col-span-3">
+                <p class="text-7xl font-extrabold">Welcome to my page!</p>
+                <p class="pt-20 text-justify">Hi Hi~ Kro- *ehem* Saya Achmad Habibie Fattahillah, tapi bisa dipanggil Friedrich Franz Tarkovsky... atau Habibie aja. Sekarang mahasiswa aktif di Politeknik Elektronika Negeri Surabaya (PENS) di Jurusan Teknik Informatika. Salam kenal~</p>
+            </div>
+            <div class="col-span-1"></div>
+            <div class="col-span-3">
+                <img src="img/hbb.png">
+            </div>
+        </div>
+    </div>
+    <div class="About" id="About">
+        <p class="pt-14 font-extrabold text-4xl text-center">Who Am I?</p>
+        <div class="pt-10 grid grid-cols-7">
+            <div class="px-24 col-span-3">
+                <img src="img/unknown.png">    
+            </div>
+            <div class="col-span-4">
+                <p>Nama: Achmad Habibie Fattahillah</p>
+                <p>TTL: Jakarta, 07 Juni 2003</p>
+                <p>Kelamin: Laki-Laki</p>
+                <p>Agama: Islam</p>
+                <p>Nomor HP: 087863786700</p>
+                <p>E-Mail: habibiefattahillah78@gmail.com</p>
+                <p>Bahasa: Indonesia, Inggris</p>
+                <p>Alamat: Jl. Kavling Mentari I, Perum. Mitra Residence Blok D/1, Waru, Sidoarjo</p>
+                <p>Hobi:</p>
+                <ul class="list-inside list-disc">
+                    <li>Browsing</li>
+                    <li>Film / Buku Psikologi</li>
+                    <li>Youtube</li>
+                    <li>Gacha!!</li>
+                </ul>
+                <p>Asal Sekolah: SMAN 16 Surabaya</p>
+            </div>
+        </div>
+    </div>
+    <div class="Stuff pt-14 px-10" id="Stuff">
+        <p class="text-center font-extrabold text-4xl pb-12">-- Stuff --</p>
+        <div class="grid grid-cols-7">
+            <div class="col-span-3 hover:opacity-50 border-solid border-4 rounded-lg"><a href="../UTS HTML/index.html">
+                <img class="h-full" src="https://ecs7.tokopedia.net/blog-tokopedia-com/uploads/2018/04/wisata-surabaya.jpg">
+                <p class="text-center font-extrabold text-2xl my-3">Tugas UTS - Suroboyo Rek!</p>
+                </a>
+            </div>
+            <div></div>
+            <div class="col-span-3">
+
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        /* Sticky Navbar JS */
+        window.addEventListener("scroll", function(){
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY >0);
+        })
+    </script>
+</body>
+</html>

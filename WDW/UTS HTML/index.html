@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS and Framework Used -->
+    <link rel="stylesheet" href="UTS.css">
+    <link rel="stylesheet" href="../css/Tailwind.css">
+    <title>Wisata di Surabaya</title>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <a href="#Home" class="logo">Suroboyo Rek!</a>
+        <ul>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Stuff">Stuff</a></li>
+        </ul>
+    </header>
+    <!-- Banner -->
+    <div class="Home font-serif" id="Home">
+        <p>Wisata di Surabaya</p>
+    </div>
+    <!-- About Section -->
+    <div class="About px-10 text-l py-10" id="About">
+        <p class="text-center font-extrabold text-4xl pb-12">-- About --</p>
+        <div class="grid grid-cols-7 text-justify">
+            <div class="col-span-3">
+                <p class="text-2xl font-extrabold mb-3">Surabaya seperti apa sih?</p>
+                <p class="mb-3">Surabaya adalah adalah ibu kota Provinsi Jawa Timur, Indonesia, sekaligus kota metropolitan terbesar di provinsi tersebut. Surabaya merupakan kota terbesar kedua di Indonesia setelah Jakarta. Surabaya memiliki luas sekitar ±326,81 km², dan 2.970.843 jiwa penduduk pada tahun 2020.</p>
+                <p>Surabaya terkenal dengan sebutan Kota Pahlawan karena sejarahnya yang sangat diperhitungkan dalam perjuangan Arek-Arek Suroboyo (Pemuda-pemuda Surabaya) dalam mempertahankan kemerdekaan bangsa Indonesia dari serangan penjajah. Surabaya juga sempat menjadi kota terbesar di Hindia Belanda dan menjadi pusat niaga di Nusantara yang sejajar dengan Hong Kong dan Shanghai pada masanya.</p>
+            </div>
+            <div class="col-span-1"></div>
+            <div class="col-span-3">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Western_Surabaya_at_dusk_%28late_2015%29.jpg/800px-Western_Surabaya_at_dusk_%28late_2015%29.jpg">
+                <p class="font-thin text-right text-sm">Pusat Bisnis Surabaya Barat</p>
+            </div>
+        </div>
+    </div>
+    <!-- Stuff Section -->
+    <div class="Stuff pt-10 px-10" id="Stuff">
+        <p class="text-center font-extrabold text-4xl pb-12">-- Stuff --</p>
+        <div class="grid grid-cols-7">
+            <div class="col-span-3 hover:opacity-50 border-solid border-4 rounded-lg"><a href="10Nov.html">
+                <img class="h-full" src="https://soc-phoenix.s3.amazonaws.com/795-big_slider_03_31_pahlawan_surabaya.jpg.jpeg">
+                <p class="text-center font-extrabold text-2xl my-3">Museum 10 November</p>
+                </a>
+            </div>
+            <div></div>
+            <div class="col-span-3 hover:opacity-50 border-solid border-4 rounded-lg"><a href="MWS.html">
+                <img class="h-full" src="https://assets-a1.kompasiana.com/items/album/2015/10/28/museum-wr-soepratman-01-56308cf91dafbd3207a3a48b.jpg">
+                <p class="text-center font-extrabold text-2xl my-3">Museum WR Soepratman</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- To Top Button -->
+    <button onclick="topFunction()" class="rounded-full" id="myBtn" title="Go to top">Top</button>
+
+    <script type="text/javascript">
+        /* Sticky Navbar JS */
+        window.addEventListener("scroll", function(){
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY >0);
+        })
+        var mybutton = document.getElementById("myBtn");
+        window.onscroll = function() {scrollFunction()};
+        /* To Top Button JS */
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</body>
+</html>
