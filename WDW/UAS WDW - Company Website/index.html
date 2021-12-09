@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="UAS.css">
+    <link rel="stylesheet" href="../css/Tailwind.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <title>Vagra - We Make Games</title>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <a onclick="topFunction()" class="logo">Vagra</a>
+        <ul>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Stuff">Our Games</a></li>
+        </ul>
+    </header>
+    <!-- Banner -->
+    <div class="Home" id="Home">
+        <div class="carousel" data-flickity='{ "wrapAround": true, "autoPlay": true, "pageDots": false}'>
+            <div class="carousel-cell-header">
+                <img src="../HTML/img/1.png" height="100%" width="100%">
+            </div>
+            <div class="carousel-cell-header">
+                <img src="../HTML/img/2.png" height="100%" width="100%">
+            </div>
+            <div class="carousel-cell-header">
+                <img src="../HTML/img/We Are Vagra.png" height="100%" width="100%">
+            </div>
+        </div>
+    </div>
+    <!-- About -->
+    <div class="text-center py-24 About px-48" id="About">
+        <p class="text-black text-2xl">About Us</p>
+        <br>
+        <div class="carousel" data-flickity='{ "wrapAround": true, "pageDots": false}'>
+            <div class="py-10 px-24 carousel-cell-content text-center" style="background-image: url('https://cdn.wallpapersafari.com/56/61/p8bDwL.jpg');">
+                <p class="pb-5">What we do</p>
+                <p class="text-2xl px-20">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam ratione id in tenetur voluptatum illum vel sapiente? Nisi sit aut sint, ratione dolorum reiciendis? Quia at labore similique eum iusto.</p>
+            </div>
+            <div class="py-10 px-24 carousel-cell-content text-center" style="background-image: url('https://i.ytimg.com/vi/9sNQFJAb3Ss/maxresdefault.jpg');">
+                <p class="pb-5">Who we are</p>
+                <p class="text-2xl px-20">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla provident dolores officia, debitis alias eum ullam explicabo corrupti assumenda dolore qui, odio consequuntur harum tempora ratione ut neque nam odit?</p>
+            </div>
+            <div class="py-10 px-24 carousel-cell-content text-center" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoF3dT3insE0ujwIsNlEXWSGMf25C2-Q2i9w&usqp=CAU');">
+                <p class="pb-5">How we started</p>
+                <p class="text-2xl px-20">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla provident dolores officia, debitis alias eum ullam explicabo corrupti assumenda dolore qui, odio consequuntur harum tempora ratione ut neque nam odit?</p>
+            </div>
+        </div>
+    </div>
+    <!-- Stuff -->
+    <div class="Stuff pt-20 pb-10 px-8" id="Stuff">
+        <p class="text-center font-extrabold text-4xl pb-12">Our Games</p>
+        <div class="grid grid-cols-7 text-justify">
+            <div class="col-span-3">
+                <p class="text-2xl font-extrabold mb-3">Stick to the beat!</p>
+                <p class="mb-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero numquam dignissimos molestiae sint itaque rerum, animi amet laboriosam sunt doloremque quasi voluptatum debitis, hic suscipit possimus quae obcaecati facilis odio.</p>
+            </div>
+            <div class="col-span-1"></div>
+            <div class="col-span-3">
+                <img src="../HTML/img/stickman-fight-craft-game-screenshot.jpg">
+            </div>
+        </div>
+        <div class="grid pt-10 grid-cols-7 text-justify">
+            <div class="col-span-3">
+                <img src="../HTML/img/screen-7.jpg">
+            </div>
+            <div class="col-span-1"></div>
+            <div class="col-span-3">
+                <p class="text-2xl font-extrabold mb-3">Beat the Stick</p>
+                <p class="mb-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur perferendis a, explicabo soluta beatae fugit animi sit nesciunt rerum, fuga voluptatem vel nostrum corrupti voluptas dignissimos! Eaque molestiae sint corrupti.</p>
+            </div>
+        </div>
+        <div class="pt-10 text-center">
+            <p class="text-2xl">And many more in the future!</p>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="py-5 px-36">
+        <p>Copyright &copy; 2021 &#8212; Vagra. All Rights Reserved</p>
+    </footer>
+    <!-- To Top Button -->
+    <button onclick="topFunction()" class="rounded-full" id="myBtn" title="Go to top">Top</button>
+    <!-- Javascript -->
+    <script type="text/javascript">
+        /* Sticky Navbar JS */
+        window.addEventListener("scroll", function(){
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY >0);
+        })
+        var mybutton = document.getElementById("myBtn");
+        window.onscroll = function() {scrollFunction()};
+        /* To Top Button JS */
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+        smoothScroll.init();
+    </script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+</body>
+</html>
